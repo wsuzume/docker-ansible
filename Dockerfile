@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-# installing tzdata stops if this environment variable not defined
+# installing tzdata stops if this environment variable is not defined
 ENV DEBIAN_FRONTEND=noninteractive
 
 # sshpass is needed for ansible first login to remote server
