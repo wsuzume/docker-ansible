@@ -1,6 +1,7 @@
 APPNAME=ignite
 USERNAME=wsuzume
 
+SOURCE=Dockerfile
 IMAGE=${USERNAME}/docker-ansible:latest
 
 SSH_DIR=~/.ssh
@@ -11,7 +12,6 @@ TRUE_ROOT_INVENTORY=${CONFIG_DIR}/${APPNAME}/root/inventory
 TRUE_USER_INVENTORY=${CONFIG_DIR}/${APPNAME}/user/inventory
 CONTAINER_ROOT_INVENTORY=/playbook/root/inventory
 CONTAINER_USER_INVENTORY=/playbook/user/inventory
-
 
 # build container image
 .PHONY: image
