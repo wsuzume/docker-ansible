@@ -1,7 +1,9 @@
 ---
 - name: "install requirements"
   apt:
+    update_cache: yes
     name:
+      - git
       - make
       - docker
       - docker-compose

@@ -7,10 +7,14 @@ ansible_port=XXXX
 ansible_user=XXXX
 ansible_ssh_pass=XXXX
 
-ssh_admin_pubkey=~/.ssh/id_admin.pub
-ssh_common_pubkey=~/.ssh/id_common.pub
-
 new_ssh_port=XXXX
 
+# for admin users
+ssh_admin_pubkey=id_admin.pub
+
 admin_password=XXXX
+
+# for common users
+ssh_common_pubkey=id_common.pub
+
 castor_password=XXXX
