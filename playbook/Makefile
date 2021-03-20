@@ -5,4 +5,4 @@ root:
 .PHONY: user
 user:
 	ansible-playbook -i user/inventory/server user/playbook.yml \
-		-u castor --private-key="~/.ssh/id_common"
+		-u sirius --private-key="~/.ssh/id_common"
