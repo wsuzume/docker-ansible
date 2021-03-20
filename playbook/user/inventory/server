@@ -1,0 +1,6 @@
+[server]
+XXX.XXX.XXX.XXX
+
+[server:vars]
+ansible_port=XXXX
+ansible_sudo_pass=XXXXXXXX
