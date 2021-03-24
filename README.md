@@ -29,8 +29,6 @@ Each key name should be `~/.ssh/id_admin` and `~/.ssh/id_common`, or you have to
 $ ssh-keygen -t ed25519
 ```
 
-After you enter to the container by `$ make shell`, you should access server once by `$ ssh [your host]` because the container have to register the fingerprint of the server.
-
 And then, you can make SSH & UFW settings automatically by following commands in the container.
 
 ```
