@@ -17,4 +17,4 @@ admin_password=XXXX
 # for common users
 ssh_common_pubkey=id_common.pub
 
-castor_password=XXXX
+sirius_password=XXXX

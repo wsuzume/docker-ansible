@@ -19,9 +19,9 @@
 
     - include_tasks: tasks/0022_create_common_user.yml
       vars:
-        username: castor
+        username: sirius
         uid: 2001
-        password: "{{ castor_password | password_hash('sha512') }}"
+        password: "{{ sirius_password | password_hash('sha512') }}"
         ssh_pubkey: "{{ ssh_common_pubkey }}"
 
     ### SSH security settings
