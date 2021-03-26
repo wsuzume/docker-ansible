@@ -14,6 +14,11 @@
     name: docker
     gid: 5003
 
+- name: "allow fundamental commands in sudo to common"
+  lineinfile:
+    dest: /etc/sudoers
+    line: "%common ALL=(root) /usr/bin/pwd,/usr/bin/cat,/usr/bin/ls,/usr/bin/rm"
+
 - name: "allow 'sudo make' to common"
   lineinfile:
     dest: /etc/sudoers
@@ -23,3 +28,8 @@
   lineinfile:
     dest: /etc/sudoers
     line: "%common ALL=(root) /usr/bin/docker"
+
+- name: "allow 'sudo docker-compose' to common"
+  lineinfile:
+    dest: /etc/sudoers
+    line: "%common ALL=(root) /usr/bin/docker-compose"
